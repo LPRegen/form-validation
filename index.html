@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="myUsername2345"
+            minlength="5"
+            maxlength="20"
+            required
+          />
+          <span class="material-symbols-outlined check"> check_circle </span>
+          <span class="material-symbols-outlined error"> cancel </span>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="myUsername2345@gmail.com"
+            required
+          />
+          <span class="material-symbols-outlined check"> check_circle </span>
+          <span class="material-symbols-outlined error"> cancel </span>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="country">Country</label>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Argentina"
+            required
+          />
+          <span class="material-symbols-outlined check"> check_circle </span>
+          <span class="material-symbols-outlined error"> cancel </span>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="zip-code">Zip code</label>
+          <input
+            type="number"
+            name="zip-code"
+            id="zip-code"
+            placeholder="5111"
+            required
+          />
+          <span class="material-symbols-outlined check"> check_circle </span>
+          <span class="material-symbols-outlined error"> cancel </span>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password0">Password</label>
+          <input
+            type="password"
+            name="password0"
+            id="password0"
+            placeholder="Password"
+            required
+          />
+          <span class="material-symbols-outlined check"> check_circle </span>
+          <span class="material-symbols-outlined error"> cancel </span>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password1">Password</label>
+          <input
+            type="password"
+            name="password1"
+            id="password1"
+            placeholder="Confirm password"
+            required
+          />
+          <span class="material-symbols-outlined check"> check_circle </span>
+          <span class="material-symbols-outlined error"> cancel </span>
+          <small>Error message</small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="./validation.js"></script>
+  </body>
+</html>
